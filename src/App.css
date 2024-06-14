@@ -1,38 +1,150 @@
-.App {
-  text-align: center;
+
+
+.box
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 450px;
+  width: 1000px;
+  background-color: rgba(255, 255, 255, 0.333);
+  border-radius: 15px;
+  padding: 1%;
+  /* margin: auto; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.left
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App
+{
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  
+}
+
+.original
+{
+  /* background-image: url("./assets/original.jpg"); */
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  width: 400px;
+  
+
+}
+
+.detected
+{
+  border-radius: 10px;
+  height: 400px;
+  width: 500px;
+  animation: op 1s ease-in;
+}
+
+@keyframes op 
+{
+  0%
+  {
+    opacity: 0;
+  }
+  100%
+  {
+    opacity: 1;
+  }
+  
+}
+
+
+#upload
+{
+  display: none;
+}
+
+label
+{
+  font-family: Roboto;
+  font-size:1rem;
+  /* margin: 50px; */
+  width: 180px;
+  display: block;
+  height: 50px;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, #003bfb, #2d5eac);
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+label:active
+{
+  transform: translate(2px,2px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text
+{
+  border: none;
+  outline: none;
+  height: 30px;
+  width: 260px;
+  border-radius: 5px;
+}
+
+.buttons
+{
+  display: flex;
+  gap: 10px;
+}
+
+button{
+  font-family: Roboto;
+  font-size:1rem;
+  /* margin: 50px; */
+  width: 180px;
+  display: block;
+  height: 50px;
+  color: rgb(0, 85, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+}
+
+button:active
+{
+  transform: translate(2px,2px);
+}
+
+p
+{
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 600;
+  animation: op 1s ease-in;
+  /* margin-right: 1%; */
+}
+
+.right
+{
+  /* height: 400px; */
+  width: 500px;
 }

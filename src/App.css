@@ -1,27 +1,4 @@
 
-
-.box
-{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  height: 450px;
-  width: 1000px;
-  background-color: rgba(255, 255, 255, 0.333);
-  border-radius: 15px;
-  padding: 1%;
-  /* margin: auto; */
-}
-
-.left
-{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 20px;
-}
-
 .App
 {
   font-family: "Montserrat", sans-serif;
@@ -33,6 +10,94 @@
   justify-content: center;
   
 }
+
+
+
+.box
+{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  /* column-gap: 20px; */
+  align-items: center; 
+  height: 550px; 
+  width: 1200px;
+  /* background-color: rgba(255, 255, 255, 0.333); */
+  border-radius: 15px;
+  padding: 1%;
+  /* margin: auto; */
+}
+
+
+
+.left
+{
+  background-color: rgba(255, 255, 255, 0.333);
+  padding: 1%;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.line1
+{
+  /* height: 2px; */
+  width: 100px;
+  border: solid black 3px;
+}
+
+.line2
+{
+  height: 350px;
+  width: 100px;
+  border-top: solid black 4px;
+  border-bottom: solid black 4px;
+  border-left: solid black 4px;
+}
+
+.result
+{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 550px;
+  /* gap: 37%; */
+  margin-left: 10px;
+  /* justify-content: space-between; */
+
+}
+
+.query
+{
+  display: flex;
+  align-items: center;
+  height: 200px;
+  width: 220px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background-color: #003bfb; */
+}
+
+
+.qimage
+{
+  height: 200px;
+  width: 220px;
+}
+
+.right
+{
+  height: 200px;
+  display: flex;
+  align-items: center;
+  /* height: 500px;
+  width: 500px;
+  overflow: hidden; */
+}
+
 
 .original
 {
@@ -50,9 +115,10 @@
 
 .detected
 {
-  border-radius: 10px;
-  height: 400px;
+  height: 300px;
   width: 500px;
+  /* height: 400px;
+  width: 500px; */
   animation: op 1s ease-in;
 }
 
@@ -70,7 +136,7 @@
 }
 
 
-#upload
+#upload, #query_img
 {
   display: none;
 }
@@ -138,13 +204,8 @@ p
 {
   font-family: Roboto;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 400;
   animation: op 1s ease-in;
   /* margin-right: 1%; */
 }
 
-.right
-{
-  /* height: 400px; */
-  width: 500px;
-}
